@@ -1,0 +1,237 @@
+@import "./markdown.scss";
+@import "./highlight.scss";
+@import "./article.scss";
+.el-drawer.ltr,
+.el-drawer.rtl {
+  height: calc(100% - 40px);
+  top: 40px;
+  p,
+  ul,
+  li,
+  a {
+    text-align: left;
+    list-style: disc;
+    color: #404040;
+  }
+}
+.article {
+  // .title {
+  //   @media screen and (min-width: 914px) {
+  //     & {
+  //       padding-left: calc(50% - 457px + 32px);
+  //     }
+  //   }
+  //   padding-top: 32px;
+  //   font-size: 32px;
+  //   text-align: left;
+  //   position: relative;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   padding-left: 2em;
+  // }
+  pre.hljs {
+    font-size: 16px;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    // color: #abb2bf;
+    // background: #282c34;
+    // border-left: 5px solid #61aeee;
+
+    & > code {
+      // color: #abb2bf;
+      font-size: 16px !important;
+      white-space: normal;
+    }
+  }
+  .markdown-preview {
+    padding: 0!important;
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.hljs-comment,
+.hljs-blockquote {
+  color: #969896;
+}
+
+.hljs-cdata {
+  color: #183691;
+}
+
+.hljs-doctype,
+.hljs-punctuation,
+.hljs-variable,
+.hljs-macro.property {
+  color: #333;
+}
+
+.hljs-operator,
+.hljs-important,
+.hljs-keyword,
+.hljs-rule,
+.hljs-builtin {
+  color: #a71d5d;
+}
+
+.hljs-string,
+.hljs-url,
+.hljs-regex,
+.hljs-attr-value {
+  color: #183691;
+}
+
+.hljs-property,
+.hljs-number,
+.hljs-boolean,
+.hljs-entity,
+.hljs-atrule,
+.hljs-constant,
+.hljs-symbol,
+.hljs-command,
+.hljs-code {
+  color: #0086b3;
+}
+
+.hljs-tag,
+.hljs-selector,
+.hljs-prolog {
+  color: #63a35c;
+}
+
+.hljs-function,
+.hljs-namespace,
+.hljs-pseudo-element,
+.hljs-class,
+.hljs-class-name,
+.hljs-pseudo-class,
+.hljs-id,
+.hljs-url-reference .hljs-variable,
+.hljs-attr-name {
+  color: #795da3;
+}
+
+.hljs-entity {
+  cursor: help;
+}
+
+.hljs-title,
+.hljs-title .hljs-punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.hljs-list {
+  color: #ed6a43;
+}
+
+.hljs-inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.hljs-deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.hljs-bold {
+  font-weight: bold;
+}
+
+.hljs-italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .hljs-property {
+  color: #183691;
+}
+
+.language-markup .hljs-tag .hljs-punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .hljs-function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .hljs-atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .hljs-function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .hljs-url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .hljs-symbol {
+  color: #795da3;
+}
+
+.language-makefile .hljs-variable {
+  color: #183691;
+}
+
+.language-makefile .hljs-builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .hljs-keyword {
+  color: #0086b3;
+}

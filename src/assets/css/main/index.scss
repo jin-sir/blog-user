@@ -1,0 +1,51 @@
+@import "./blogcard.scss";
+.main {
+  .m-nav {
+    display: flex;
+    // justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
+    .m-label {
+      width: 20%;
+      height: 50px;
+      span {
+        line-height: 25px;
+        display: block;
+      }
+      .m-name {
+        font-size: 24px;
+      }
+      .m-tag {
+        font-family: Bungasai;
+        font-size: 18px;
+      }
+    }
+    .nav {
+      width: 70%;
+      margin-left: 20px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      .n-item {
+        cursor: pointer;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 40px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        &.router-link-exact-active {
+          color: rgb(255, 255, 255);
+          background-color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+  .blog-article {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

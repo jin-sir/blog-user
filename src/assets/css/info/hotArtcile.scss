@@ -1,0 +1,64 @@
+.panel {
+  width: 280px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px 10px;
+  box-sizing: border-box;
+  .title {
+    font-size: 16px;
+    text-align: left;
+    padding: 40px 0 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    &::after {
+      content: "";
+      width: 64px;
+      height: 2px;
+      background-color: rgb(0, 0, 0);
+      display: block;
+      margin-top: 10px;
+      transition: 0.5s all;
+    }
+    &:hover {
+      &::after {
+        width: 80px;
+      }
+    }
+  }
+  .content {
+    padding: 0;
+    .item {
+      height: 30px;
+      line-height: 30px;
+      padding-left: 5px;
+      margin-bottom: 8px;
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+      &:nth-child(even) {
+        background-color: rgb(246, 246, 246);
+      }
+    }
+    .gray {
+      font-style: normal;
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(128, 128, 128);
+      display: inline-block;
+      text-align: center;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    .orange {
+      background-color: rgb(255, 102, 0);
+    }
+    .link {
+      font-size: 14px;
+    }
+  }
+}

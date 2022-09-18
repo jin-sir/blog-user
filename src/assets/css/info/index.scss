@@ -1,0 +1,147 @@
+@import "./hotArtcile.scss";
+@import "./tagCloud.scss";
+
+.page-info {
+  margin-bottom: 20px;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+  }
+  .info-content-l {
+    width: calc(98% - 280px);
+    float: left;
+    .my-description {
+      padding: 15px;
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      .info-avatar {
+        float: left;
+        font-size: 0;
+        padding: 0 15px 15px 0;
+        img {
+          width: 300px;
+          height: 160px;
+        }
+      }
+      .info-title {
+        padding: 15px 0 20px;
+        font-size: 20px;
+      }
+      .info-name,
+      .info-profession,
+      .info-indroduce {
+        text-align: left;
+        padding: 5px 0;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .info-indroduce {
+        padding: 0;
+        min-height: 280px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .message-board {
+      overflow: hidden;
+      padding: 15px;
+      margin: 30px 0;
+      background-color: rgb(255, 255, 255);
+      .info-avatar {
+          width: 300px;
+        float: left;
+        font-size: 0;
+        padding: 0 15px 15px 0;
+        img {
+          width: 300px;
+          height: 160px;
+        }
+      }
+      .info-mb-box {
+          float: right;
+          width: calc(100% - 315px);
+          height: 175px;
+        .info-title {
+            padding: 15px 0 20px;
+            font-size: 20px;
+        }
+      }
+      .info-quote {
+          font-size: 16px;
+          line-height: 22px;
+          padding: 0 30px;
+      }
+      .info-master-saying {
+          clear: both;
+          border-top: 2px solid rgb(248,222,221);
+          border-bottom: 2px solid rgb(248,222,221);
+          font-size: 14px;
+          padding: 15px 0;
+          margin: 20px 0 40px;
+          display: inline-block;
+          letter-spacing: 2px;
+      }
+      .info-comment {
+          li {
+              margin-bottom: 20px;
+              font-size: 16px;
+              em {
+                  width: 48px;
+                  display: inline-block;
+                  text-align: right;
+                  margin-right: 10px;
+              }
+          }
+          .send-comment {
+              width: 600px;
+              margin: 0 auto;
+              .s-input {
+                  text-align: right;
+                  input {
+                      width: 200px;
+                      padding: 10px 10px;
+                      background-color: rgb(238,238,238);
+                      border: none;
+                      outline: none;
+                  }
+              }
+              .s-functional {
+                  margin-top: 20px;
+                  .btn {
+                      cursor: pointer;
+                      display: inline-block;
+                      text-align: center;
+                      font-size: 14px;
+                      width: 80px;
+                      line-height: 30px;
+                      background-color: rgb(248,222,223);
+                  }
+                  .s-c-content {
+                      float: left;
+                      span {
+                          margin-right: 10px;
+                      }
+                  }
+                  .send {
+                      float: right;
+                  }
+              }
+          }
+      }
+    }
+
+  }
+  .info-content-r {
+    width: 280px;
+    float: right;
+    .tag-cloud{
+        margin-top: 15px;
+    }
+  }
+}

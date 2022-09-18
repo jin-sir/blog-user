@@ -1,0 +1,111 @@
+.vpanel {
+  box-sizing: border-box;
+  line-height: 1.75;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  .vwrap {
+    border: 1px solid #b2b2b5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    .text-right {
+      text-align: right;
+      color: #b2b2b5;
+      .cancel-reply-btn {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+        fill: #b2b2b5;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+      }
+    }
+
+    #veditor {
+      overflow: hidden;
+      overflow-wrap: break-word;
+      resize: none;
+      height: 122px;
+      width: 100%;
+      min-height: 8.75em;
+      font-size: 0.875em;
+      background: transparent;
+      transition: all 0.25s ease;
+      outline: none;
+      padding: 10px 5px;
+      border: none;
+      max-width: 100%;
+    }
+    textarea,
+    input:not([type="checkbox"]):not([type="number"]):not([type="radio"]):not([type="submit"]):not([type="file"]),
+    input[type="number"] {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0.7111em 1em;
+      background: #fff;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 0;
+      color: #333;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    input:not([type="checkbox"]):not([type="number"]):not([type="radio"]):not([type="submit"]):not([type="file"]),
+    input[type="number"] {
+      overflow: inherit;
+    }
+    .vinput {
+      width: 33.33%;
+      border-bottom: 1px dashed #dedede !important;
+    }
+    .vnick {
+      border-right: 1px dashed #dedede !important;
+    }
+    .vedit {
+      position: relative;
+      padding-top: 10px;
+    }
+    .vcol.vcol-30 {
+      width: 30%;
+    }
+    .vcol {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      text-align: right;
+    }
+    .vcol.vcol-70 {
+      width: 70%;
+    }
+    .vbtn {
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      text-align: center;
+      color: #555;
+      border: 1px solid #fff;
+      border-radius: 0.3em;
+      display: inline-block;
+      background: #f8dedf;
+      margin-bottom: 0;
+      font-weight: 400;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 0.5em 1.25em;
+      font-size: 0.875em;
+      line-height: 1.42857143;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      outline: none;
+    }
+  }
+}
